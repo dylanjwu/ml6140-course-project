@@ -1,0 +1,266 @@
+MODEL: Naive Bayes
+shape of data: (13574, 52)
+   [bow -  - rows:1000 - features:50 ]
+      predicted: ['Bash' 'C' 'Bash' ... 'C' 'Go' 'Rust']
+      Cross-Validation Scores: [0.50239411 0.51639042 0.53959484 0.51344383 0.5073692 ]
+      Mean Score: 0.5158384802354886
+      Standard Deviation of Scores: 0.012828746794223224
+      Variance of Misclassifications: 0.24974912277910036
+
+samples_filename: ./data/bow_50features_1000rows_misclassified.csv
+shape of data: (13574, 102)
+   [bow -  - rows:1000 - features:100 ]
+      predicted: ['Go' 'Shell' 'PowerShell' ... 'C' 'Rust' 'JSON']
+      Cross-Validation Scores: [0.57458564 0.58342541 0.60478821 0.5694291  0.57479735]
+      Mean Score: 0.581405141609362
+      Standard Deviation of Scores: 0.0125255243636781
+      Variance of Misclassifications: 0.24337312366362085
+
+samples_filename: ./data/bow_100features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [bow - special_chars - rows:1000 - features:50 ]
+      predicted: ['Ruby' 'Shell' 'PowerShell' ... 'C' 'Rust' 'JSON']
+      Cross-Validation Scores: [0.42836096 0.42615101 0.45930018 0.42099448 0.43773029]
+      Mean Score: 0.43450738344658557
+      Standard Deviation of Scores: 0.013529791182228633
+      Variance of Misclassifications: 0.24571068607682597
+
+samples_filename: ./data/bow_special_chars_30features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [bow - special_chars - rows:1000 - features:100 ]
+      predicted: ['Ruby' 'Shell' 'PowerShell' ... 'C' 'Rust' 'JSON']
+      Cross-Validation Scores: [0.42836096 0.42615101 0.45930018 0.42099448 0.43773029]
+      Mean Score: 0.43450738344658557
+      Standard Deviation of Scores: 0.013529791182228633
+      Variance of Misclassifications: 0.24571068607682597
+
+samples_filename: ./data/bow_special_chars_30features_1000rows_misclassified.csv
+shape of data: (13574, 52)
+   [tfidf -  - rows:1000 - features:50 ]
+      predicted: ['Bash' 'C' 'Bash' ... 'Text' 'Text' 'Rust']
+      Cross-Validation Scores: [0.53812155 0.5480663  0.55911602 0.54069982 0.53831982]
+      Mean Score: 0.5448647012761061
+      Standard Deviation of Scores: 0.007987517757570912
+      Variance of Misclassifications: 0.24798711531499132
+
+samples_filename: ./data/tfidf_50features_1000rows_misclassified.csv
+shape of data: (13574, 102)
+   [tfidf -  - rows:1000 - features:100 ]
+      predicted: ['Go' 'Shell' 'PowerShell' ... 'C' 'C++' 'JSON']
+      Cross-Validation Scores: [0.60552486 0.61141805 0.6305709  0.59668508 0.59579956]
+      Mean Score: 0.6079996905751639
+      Standard Deviation of Scores: 0.012681743829165974
+      Variance of Misclassifications: 0.2383358726974573
+
+samples_filename: ./data/tfidf_100features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [tfidf - special_chars - rows:1000 - features:50 ]
+      predicted: ['Ruby' 'Shell' 'PowerShell' ... 'C' 'Rust' 'JSON']
+      Cross-Validation Scores: [0.42946593 0.44051565 0.46850829 0.4228361  0.44473102]
+      Mean Score: 0.4412113982338356
+      Standard Deviation of Scores: 0.01570732150859639
+      Variance of Misclassifications: 0.2465438698155144
+
+samples_filename: ./data/tfidf_special_chars_30features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [tfidf - special_chars - rows:1000 - features:100 ]
+      predicted: ['Ruby' 'Shell' 'PowerShell' ... 'C' 'Rust' 'JSON']
+      Cross-Validation Scores: [0.42946593 0.44051565 0.46850829 0.4228361  0.44473102]
+      Mean Score: 0.4412113982338356
+      Standard Deviation of Scores: 0.01570732150859639
+      Variance of Misclassifications: 0.2465438698155144
+
+samples_filename: ./data/tfidf_special_chars_30features_1000rows_misclassified.csv
+MODEL: Decision Tree
+shape of data: (13574, 52)
+   [bow -  - rows:1000 - features:50 ]
+      predicted: ['Bash' 'Bash' 'Bash' ... 'Text' 'Text' 'Shell']
+      Cross-Validation Scores: [0.58084715 0.57569061 0.56869245 0.5679558  0.57627119]
+      Mean Score: 0.5738914380247839
+      Standard Deviation of Scores: 0.004889649257575359
+      Variance of Misclassifications: 0.24468069736714218
+
+samples_filename: ./data/bow_50features_1000rows_misclassified.csv
+shape of data: (13574, 102)
+   [bow -  - rows:1000 - features:100 ]
+      predicted: ['Go' 'C' 'Shell' ... 'C' 'JavaScript' 'Text']
+      Cross-Validation Scores: [0.58968692 0.59410681 0.6106814  0.59116022 0.5899042 ]
+      Mean Score: 0.5951079119116348
+      Standard Deviation of Scores: 0.007944629607783672
+      Variance of Misclassifications: 0.24075716216067478
+
+samples_filename: ./data/bow_100features_1000rows_misclassified.csv
+X_scaled shape: (13574, 101)
+shape of data: (13574, 72)
+   [PCA - bow -  - rows:1000 - components:70 ]
+      predicted: ['Bash' 'Bash' 'Bash' ... 'Java' 'JavaScript' 'Text']
+      Cross-Validation Scores: [0.62762431 0.61362799 0.62430939 0.62357274 0.61532793]
+      Mean Score: 0.620892473512284
+      Standard Deviation of Scores: 0.005439000519702233
+      Variance of Misclassifications: 0.23570377581370566
+
+samples_filename: ./data/bow_pca_70features_1000rows_misclassified.csv
+X_scaled shape: (13574, 101)
+shape of data: (13574, 82)
+   [PCA - bow -  - rows:1000 - components:80 ]
+      predicted: ['Go' 'Bash' 'Bash' ... 'Text' 'Python' 'Text']
+      Cross-Validation Scores: [0.61952118 0.61436464 0.62394107 0.6213628  0.61717023]
+      Mean Score: 0.6192719830739185
+      Standard Deviation of Scores: 0.0033085751014492655
+      Variance of Misclassifications: 0.235914398705835
+
+samples_filename: ./data/bow_pca_80features_1000rows_misclassified.csv
+X_scaled shape: (13574, 101)
+shape of data: (13574, 102)
+   [PCA - bow -  - rows:1000 - components:100 ]
+      predicted: ['Go' 'Bash' 'Bash' ... 'Shell' 'C' 'Text']
+      Cross-Validation Scores: [0.62799263 0.62099448 0.63793738 0.62320442 0.62969786]
+      Mean Score: 0.6279653552753542
+      Standard Deviation of Scores: 0.005894122111580457
+      Variance of Misclassifications: 0.2341114476450908
+
+samples_filename: ./data/bow_pca_100features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [bow - special_chars - rows:1000 - features:50 ]
+      predicted: ['Text' 'Text' 'Shell' ... 'C' 'Rust' 'Text']
+      Cross-Validation Scores: [0.5038674  0.51197053 0.54254144 0.506814   0.52689757]
+      Mean Score: 0.5184181876661632
+      Standard Deviation of Scores: 0.014434582399350915
+      Variance of Misclassifications: 0.24968998685267685
+
+samples_filename: ./data/bow_special_chars_30features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [bow - special_chars - rows:1000 - features:100 ]
+      predicted: ['Text' 'Text' 'Shell' ... 'C' 'Rust' 'Text']
+      Cross-Validation Scores: [0.50497238 0.51086556 0.54033149 0.50755064 0.52542373]
+      Mean Score: 0.5178287604956769
+      Standard Deviation of Scores: 0.013292621192360849
+      Variance of Misclassifications: 0.249679523006665
+
+samples_filename: ./data/bow_special_chars_30features_1000rows_misclassified.csv
+X_scaled shape: (13574, 30)
+shape of data: (13574, 12)
+   [PCA - bow - special_chars - rows:1000 - components:10 ]
+      predicted: ['Bash' 'Bash' 'Bash' ... 'Shell' 'Text' 'Text']
+      Cross-Validation Scores: [0.6946593  0.69355433 0.70939227 0.6854512  0.69970523]
+      Mean Score: 0.6965524644738218
+      Standard Deviation of Scores: 0.00788176958862637
+      Variance of Misclassifications: 0.21177159773094323
+
+samples_filename: ./data/bow_special_chars_pca_10features_1000rows_misclassified.csv
+X_scaled shape: (13574, 30)
+shape of data: (13574, 22)
+   [PCA - bow - special_chars - rows:1000 - components:20 ]
+      predicted: ['Bash' 'Bash' 'Bash' ... 'Rust' 'Rust' 'Text']
+      Cross-Validation Scores: [0.70128913 0.6946593  0.71896869 0.70128913 0.70044215]
+      Mean Score: 0.7033296826631166
+      Standard Deviation of Scores: 0.008202678440545522
+      Variance of Misclassifications: 0.20850702431252913
+
+samples_filename: ./data/bow_special_chars_pca_20features_1000rows_misclassified.csv
+X_scaled shape: (13574, 30)
+shape of data: (13574, 32)
+   [PCA - bow - special_chars - rows:1000 - components:30 ]
+      predicted: ['Bash' 'Bash' 'Bash' ... 'Ruby' 'Rust' 'Text']
+      Cross-Validation Scores: [0.70423573 0.70128913 0.7281768  0.70865562 0.70375829]
+      Mean Score: 0.7092231129495652
+      Standard Deviation of Scores: 0.009769856214891492
+      Variance of Misclassifications: 0.20665603616617792
+
+samples_filename: ./data/bow_special_chars_pca_30features_1000rows_misclassified.csv
+shape of data: (13574, 52)
+   [tfidf -  - rows:1000 - features:50 ]
+      predicted: ['Bash' 'Bash' 'Bash' ... 'Text' 'Text' 'Shell']
+      Cross-Validation Scores: [0.55211786 0.57458564 0.55322284 0.54511971 0.56263817]
+      Mean Score: 0.5575368425909716
+      Standard Deviation of Scores: 0.01018671863366821
+      Variance of Misclassifications: 0.2465525263686206
+
+samples_filename: ./data/tfidf_50features_1000rows_misclassified.csv
+shape of data: (13574, 102)
+   [tfidf -  - rows:1000 - features:100 ]
+      predicted: ['Text' 'C' 'PowerShell' ... 'C' 'JavaScript' 'Text']
+      Cross-Validation Scores: [0.57974217 0.56869245 0.60662983 0.57311234 0.57406043]
+      Mean Score: 0.5804474445987045
+      Standard Deviation of Scores: 0.013555756075245257
+      Variance of Misclassifications: 0.24344489435846525
+
+samples_filename: ./data/tfidf_100features_1000rows_misclassified.csv
+X_scaled shape: (13574, 101)
+shape of data: (13574, 72)
+   [PCA - tfidf -  - rows:1000 - components:70 ]
+      predicted: ['Go' 'Bash' 'Bash' ... 'JSON' 'C++' 'Text']
+      Cross-Validation Scores: [0.59005525 0.58747698 0.6092081  0.60589319 0.62122329]
+      Mean Score: 0.60277136083143
+      Standard Deviation of Scores: 0.012548056529915813
+      Variance of Misclassifications: 0.23936248019548903
+
+samples_filename: ./data/tfidf_pca_70features_1000rows_misclassified.csv
+X_scaled shape: (13574, 101)
+shape of data: (13574, 82)
+   [PCA - tfidf -  - rows:1000 - components:80 ]
+      predicted: ['Go' 'Bash' 'PowerShell' ... 'Java' 'HTML' 'Text']
+      Cross-Validation Scores: [0.6106814  0.59889503 0.60110497 0.60552486 0.60280029]
+      Mean Score: 0.6038013112555999
+      Standard Deviation of Scores: 0.0040657136949578685
+      Variance of Misclassifications: 0.23991731911749664
+
+samples_filename: ./data/tfidf_pca_80features_1000rows_misclassified.csv
+X_scaled shape: (13574, 101)
+shape of data: (13574, 102)
+   [PCA - tfidf -  - rows:1000 - components:100 ]
+      predicted: ['Go' 'Bash' 'Bash' ... 'C++' 'Rust' 'Text']
+      Cross-Validation Scores: [0.61841621 0.60036832 0.61878453 0.61731123 0.61090641]
+      Mean Score: 0.6131573411720959
+      Standard Deviation of Scores: 0.0070028763793485525
+      Variance of Misclassifications: 0.23804768274765142
+
+samples_filename: ./data/tfidf_pca_100features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [tfidf - special_chars - rows:1000 - features:50 ]
+      predicted: ['Text' 'Text' 'Bash' ... 'C' 'JavaScript' 'Text']
+      Cross-Validation Scores: [0.50460405 0.4961326  0.51491713 0.49023941 0.50442152]
+      Mean Score: 0.502062940811643
+      Standard Deviation of Scores: 0.008393033791008172
+      Variance of Misclassifications: 0.2499990827852822
+
+samples_filename: ./data/tfidf_special_chars_30features_1000rows_misclassified.csv
+shape of data: (13574, 31)
+   [tfidf - special_chars - rows:1000 - features:100 ]
+      predicted: ['Text' 'Text' 'Bash' ... 'C' 'JavaScript' 'Text']
+      Cross-Validation Scores: [0.50607735 0.493186   0.51418048 0.49023941 0.5036846 ]
+      Mean Score: 0.5014735679262158
+      Standard Deviation of Scores: 0.008745730865059366
+      Variance of Misclassifications: 0.24999980461698312
+
+samples_filename: ./data/tfidf_special_chars_30features_1000rows_misclassified.csv
+X_scaled shape: (13574, 30)
+shape of data: (13574, 12)
+   [PCA - tfidf - special_chars - rows:1000 - components:10 ]
+      predicted: ['Bash' 'Bash' 'Bash' ... 'Rust' 'Rust' 'Text']
+      Cross-Validation Scores: [0.61583794 0.60073665 0.62173112 0.60847145 0.58658806]
+      Mean Score: 0.6066730451610977
+      Standard Deviation of Scores: 0.012268843529248383
+      Variance of Misclassifications: 0.2386519590002199
+
+samples_filename: ./data/tfidf_special_chars_pca_10features_1000rows_misclassified.csv
+X_scaled shape: (13574, 30)
+shape of data: (13574, 22)
+   [PCA - tfidf - special_chars - rows:1000 - components:20 ]
+      predicted: ['Bash' 'Bash' 'PowerShell' ... 'Rust' 'Rust' 'Text']
+      Cross-Validation Scores: [0.63130755 0.62983425 0.63977901 0.6335175  0.64443626]
+      Mean Score: 0.6357749124314143
+      Standard Deviation of Scores: 0.005502659640102682
+      Variance of Misclassifications: 0.2312640495314183
+
+samples_filename: ./data/tfidf_special_chars_pca_20features_1000rows_misclassified.csv
+X_scaled shape: (13574, 30)
+shape of data: (13574, 32)
+   [PCA - tfidf - special_chars - rows:1000 - components:30 ]
+      predicted: ['Bash' 'Bash' 'PowerShell' ... 'Rust' 'Rust' 'Text']
+      Cross-Validation Scores: [0.64751381 0.63609576 0.65893186 0.64088398 0.65438467]
+      Mean Score: 0.6475620172870771
+      Standard Deviation of Scores: 0.008389224450769542
+      Variance of Misclassifications: 0.227744653240626
+
+samples_filename: ./data/tfidf_special_chars_pca_30features_1000rows_misclassified.csv
